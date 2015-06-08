@@ -1,11 +1,64 @@
-/* line 4, ../scss/main.scss */
+/* line 5, ../scss/main.scss */
 .navbar {
-  -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
+  -webkit-border-radius: 0px;
   border-radius: 0px; }
+
+/* line 10, ../scss/main.scss */
+.logotext span {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+/* line 13, ../scss/main.scss */
+.logotext .hello {
+  color: #a7e22e; }
+/* line 16, ../scss/main.scss */
+.logotext:hover .hello {
+  color: #9358fe; }
+/* line 19, ../scss/main.scss */
+.logotext .world {
+  color: #fa2772; }
+/* line 22, ../scss/main.scss */
+.logotext:hover .world {
+  color: #a7e22e; }
+/* line 25, ../scss/main.scss */
+.logotext .punctuation {
+  color: #9358fe; }
+/* line 28, ../scss/main.scss */
+.logotext:hover .punctuation {
+  color: #fa2772; }
+
+/* line 32, ../scss/main.scss */
+.navbar-brand {
+  height: auto;
+  position: relative;
+  -moz-transform-origin: 0 50% 0;
+  -webkit-transform-origin: 0 50% 0;
+  transform-origin: 0 50% 0; }
+
+/* line 37, ../scss/main.scss */
+.navbar-collapse {
+  position: absolute;
+  right: 0px; }
+
+/* line 41, ../scss/main.scss */
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%; }
+
+/* line 46, ../scss/main.scss */
+.navbar-header {
+  width: 100%; }
+
+/* line 49, ../scss/main.scss */
+#main-wrapper {
+  margin-top: 0px;
+  padding-top: 200px; }
+
+/*# sourceMappingURL=main.css.map */

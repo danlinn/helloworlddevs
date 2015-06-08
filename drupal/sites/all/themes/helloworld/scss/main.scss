@@ -1,7 +1,52 @@
 @import "vendor";
 @import "compass";
+@import "vars";
 
 .navbar {
   @include transition(all 1s ease);
   @include border-radius(0px);
+}
+.logotext {
+  span {
+    @include transition(all .3s ease);
+  }
+  .hello {
+    color: $lt_green;
+  }
+  &:hover .hello {
+    color: $midpurple;
+  }
+  .world {
+    color: $hot_pink;
+  }
+  &:hover .world {
+    color: $lt_green;
+  }
+  .punctuation {
+    color: $midpurple;
+  }
+  &:hover .punctuation {
+    color: $hot_pink;
+  }
+}
+.navbar-brand {
+  height: auto;
+  position: relative;
+  @include transform-origin( 0, 50%, 0);
+}
+.navbar-collapse {
+  position: absolute;
+  right: 0px;
+}
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.navbar-header {
+  width: 100%;
+}
+#main-wrapper {
+  margin-top: 0px;
+  padding-top: 200px;
 }

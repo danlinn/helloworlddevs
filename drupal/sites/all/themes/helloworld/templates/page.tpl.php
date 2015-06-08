@@ -85,7 +85,8 @@
 <div id="page-wrapper"><div id="page">
 
     <!-- Page Header -->
-    <header class="navbar navbar-default <?php if ($hide_site_name && $hide_site_slogan && !$logo && !$main_menu && !$secondary_menu) { print ' element-invisible'; } ?>">
+    <header
+            class="navbar navbar-default navbar-inverse <?php if ($hide_site_name && $hide_site_slogan && !$logo && !$main_menu && !$secondary_menu) { print ' element-invisible'; } ?>">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -103,14 +104,14 @@
           <?php endif; ?>
 
           <?php if ($site_name || $site_slogan): ?>
-            <div id="site-name-slogan" class="brand navbar-brand <?php if ($hide_site_name && $hide_site_slogan) { print ' element-invisible'; } ?>">
+            <div data-0="margin-left:-260px;margin-top:100px;left:50%;transform: scale(2);" data-100="margin-left:0px;margin-top:0%;left:0%;transform: scale(1);" id="site-name-slogan" class="brand navbar-brand <?php if ($hide_site_name && $hide_site_slogan) { print ' element-invisible'; } ?>">
 
               <?php if ($site_name): ?>
                 <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
-                  <strong>
+
                     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
                       <span class="logotext"><span class="hello">hello</span><span class="world">world</span><span class="punctuation">;)</span></span></a>
-                  </strong>
+
                 </h1>
               <?php endif; ?>
 
