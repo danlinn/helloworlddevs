@@ -104,7 +104,7 @@
           <?php endif; ?>
 
           <?php if ($site_name || $site_slogan): ?>
-            <div data-0="margin-left:-260px;margin-top:100px;left:50%;transform: scale(2);" data-100="margin-left:0px;margin-top:0%;left:0%;transform: scale(1);" id="site-name-slogan" class="brand navbar-brand <?php if ($hide_site_name && $hide_site_slogan) { print ' element-invisible'; } ?>">
+            <div data-0="padding-bottom:50px; margin-left:-260px;margin-top:100px;left:50%;transform: scale(2);" data-100="padding-bottom: 0px; margin-left:0px;margin-top:0%;left:0%;transform: scale(1);" id="site-name-slogan" class="brand navbar-brand <?php if ($hide_site_name && $hide_site_slogan) { print ' element-invisible'; } ?>">
 
               <?php if ($site_name): ?>
                 <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
