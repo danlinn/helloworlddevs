@@ -1,0 +1,19 @@
+{
+  "name": "helloworld",
+  "version": "0.0.0",
+  "description": "Front end utils",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skrollr": "~0.6.29"
+  }
+}

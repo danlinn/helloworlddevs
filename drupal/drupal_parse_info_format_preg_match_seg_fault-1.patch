@@ -1,0 +1,59 @@
+diff --git a/includes/common.inc b/includes/common.inc
+index 63b691e..a687eea 100644
+--- a/includes/common.inc
++++ b/includes/common.inc
+@@ -7331,7 +7331,39 @@ function drupal_parse_info_format($data) {
+   $info = array();
+   $constants = get_defined_constants();
+ 
+-  if (preg_match_all('
++  $matches = array();
++  $lines = explode('
++', $data);
++  $lines_length = count($lines);
++
++  for ($c = 0; $c < $lines_length; $c++) {
++
++    // check if line contains part of a multiline string
++    $multi = substr_count($lines[$c], '"');
++
++    // if so, we need to include the remaining lines into this one
++    if ($multi == 1) {
++
++      $multi_line = $lines[$c];
++
++      // add lines
++      while ($c + 1 < $lines_length && substr_count($lines[$c + 1], '"') == 0) {
++        $multi_line .= '
++' . $lines[$c + 1];
++        $c++;
++      }
++
++      // add last line
++      if ($c + 1 < $lines_length) {
++        $multi_line .= '
++' . $lines[$c + 1];
++        $c++;
++        // override last line with full multi-line content
++        $lines[$c] = $multi_line;
++      }
++    }
++
++    if (preg_match('
+     @^\s*                           # Start at the beginning of a line, ignoring leading whitespace
+     ((?:
+       [^=;\[\]]|                    # Key names cannot contain equal signs, semi-colons or square brackets,
+@@ -7343,7 +7375,12 @@ function drupal_parse_info_format($data) {
+       (\'(?:[^\']|(?<=\\\\)\')*\')| # Single-quoted string, which may contain slash-escaped quotes/slashes
+       ([^\r\n]*?)                   # Non-quoted string
+     )\s*$                           # Stop at the next end of a line, ignoring trailing whitespace
+-    @msx', $data, $matches, PREG_SET_ORDER)) {
++    @msx', $lines[$c], $line_matches)) {
++      $matches[] = $line_matches;
++    }
++  }
++
++  if (count($matches) > 0) {
+     foreach ($matches as $match) {
+       // Fetch the key and value string.
+       $i = 0;

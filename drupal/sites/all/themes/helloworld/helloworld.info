@@ -1,0 +1,17 @@
+name = helloworld 
+description = A Kalatheme subtheme powered by Twitter Bootstrap & Science. 
+base theme = kalatheme 
+core = 7.x 
+
+regions[content] = Content 
+
+stylesheets[all][] = css/main.css 
+
+; DO NOT REMOVE OR EDIT BETWEEN THESE LINES
+; bower:css
+; endbower
+
+; DO NOT REMOVE OR EDIT BETWEEN THESE LINES
+; bower:js
+scripts[] = bower_components/skrollr/src/skrollr.js
+; endbower

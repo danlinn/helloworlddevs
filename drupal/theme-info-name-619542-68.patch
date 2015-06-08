@@ -1,0 +1,16 @@
+diff --git a/modules/system/system.module b/modules/system/system.module
+index 946ef0c..4cb594e 100644
+--- a/modules/system/system.module
++++ b/modules/system/system.module
+@@ -2496,6 +2496,11 @@ function _system_rebuild_theme_data() {
+     $themes[$key]->filename = $theme->uri;
+     $themes[$key]->info = drupal_parse_info_file($theme->uri) + $defaults;
+ 
++    // The info key is required (http://drupal.org/node/542202), but to avoid
++    // errors in the menu system we set a reasonable default if it is not
++    // provided.
++    $themes[$key]->info += array('name' => $key);
++
+     // Invoke hook_system_info_alter() to give installed modules a chance to
+     // modify the data in the .info files if necessary.
+     $type = 'theme';

@@ -1,0 +1,4 @@
+**/node_modules
+.idea
+webroot
+.DS_store

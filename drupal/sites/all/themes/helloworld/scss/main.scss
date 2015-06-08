@@ -1,0 +1,7 @@
+@import "vendor";
+@import "compass";
+
+.navbar {
+  @include transition(all 1s ease);
+  @include border-radius(0px);
+}
