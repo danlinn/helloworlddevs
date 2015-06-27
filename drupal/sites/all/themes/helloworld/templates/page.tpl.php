@@ -87,7 +87,10 @@
     <!-- Page Header -->
     <header
             class="navbar navbar-default navbar-inverse <?php if ($hide_site_name && $hide_site_slogan && !$logo && !$main_menu && !$secondary_menu) { print ' element-invisible'; } ?>">
+      <div class="header-bg" data-0="opacity:.5" data-100="opacity:0"></div>
+
       <div class="container">
+
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="element-invisible">Toggle navigation</span>
@@ -105,7 +108,6 @@
 
           <?php if ($site_name || $site_slogan): ?>
             <div data-0="padding-bottom:50px; margin-left:-260px;margin-top:100px;left:50%;transform: scale(2);" data-100="padding-bottom: 0px; margin-left:0px;margin-top:0%;left:0%;transform: scale(1);" id="site-name-slogan" class="brand navbar-brand <?php if ($hide_site_name && $hide_site_slogan) { print ' element-invisible'; } ?>">
-
               <?php if ($site_name): ?>
                 <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
 

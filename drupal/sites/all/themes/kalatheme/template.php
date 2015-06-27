@@ -126,7 +126,7 @@ function kalatheme_process_page(&$variables) {
   }
   // Use Font Awesome
   if (theme_get_setting('fontawesome')) {
-    drupal_add_css($base['scheme'] . ":" . KALATHEME_FONTAWESOME_CSS, 'external');
+    drupal_add_css(KALATHEME_FONTAWESOME_CSS, 'external');
   }
 
   // Define variables to theme local actions as a dropdown.

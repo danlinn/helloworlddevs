@@ -61,4 +61,16 @@
   margin-top: 0px;
   padding-top: 250px; }
 
+/* line 53, ../scss/main.scss */
+.header-bg {
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  background: url(../images/header-bg.png); }
+
+/* line 60, ../scss/main.scss */
+.navbar {
+  overflow: hidden; }
+
 /*# sourceMappingURL=main.css.map */

@@ -28,5 +28,8 @@
   "devDependencies": {
     "load-grunt-tasks": "^3.2.0"
   },
-  "preferGlobal": false
+  "preferGlobal": false,
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  }
 }

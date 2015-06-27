@@ -1,0 +1,30 @@
+<?php
+$aliases['local'] = array(
+  'root' => '/Users/danlinn/Sites/helloworld/webroot',
+  'uri' => 'hw.local',
+  'path-aliases' => array(
+    '%dump' => '/Users/danlinn/Sites/helloworld/db/hw.sql',
+    '%files' => '/Users/danlinn/Sites/helloworld/drupal/sites/default/files',
+    '%theme' => '/Users/danlinn/Sites/helloworld/drupal/sites/all/themes/helloworld',
+    '%code' => '/Users/danlinn/Sites/helloworld/drupal/sites/all',
+    '%libraries' => '/Users/danlinn/Sites/helloworld/drupal/sites/all/libraries',
+    '%modules' => '/Users/danlinn/Sites/helloworld/drupal/sites/all/modules'
+  )
+);
+$aliases['dev'] = array(
+  'root' => '/var/www/helloworlddevs.com/html',
+  'uri' => 'helloworlddevs.com',
+  'remote-host' => '50.115.166.55',
+  'remote-user' => 'danlinn',
+  'path-aliases' => array(
+    '%dump' => '/var/www/helloworlddevs.com/db/hw.sql',
+    '%files' => '/var/www/helloworlddevs.com/html/sites/default/files',
+    '%code' => '/var/www/helloworlddevs.com/html/sites/all',
+    '%theme' => '/var/www/helloworlddevs.com/html/sites/all/themes/helloworld',
+    '%libraries' => '/var/www/helloworlddevs.com/html/sites/all/libraries',
+    '$modules' => '/var/www/helloworlddevs.com/html/sites/all/modules'
+  )
+);
+
+
+?>

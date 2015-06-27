@@ -6329,13 +6329,21 @@ function drupal_render_cid_parts($granularity = NULL) {
   }
 
   if (!empty($granularity)) {
+    $cache_per_role = $granularity & DRUPAL_CACHE_PER_ROLE;
+    $cache_per_user = $granularity & DRUPAL_CACHE_PER_USER;
+    // User 1 has special permissions outside of the role system, so when
+    // caching per role is requested, it should cache per user instead.
+    if ($user->uid == 1 && $cache_per_role) {
+      $cache_per_user = TRUE;
+      $cache_per_role = FALSE;
+    }
     // 'PER_ROLE' and 'PER_USER' are mutually exclusive. 'PER_USER' can be a
     // resource drag for sites with many users, so when a module is being
     // equivocal, we favor the less expensive 'PER_ROLE' pattern.
-    if ($granularity & DRUPAL_CACHE_PER_ROLE) {
+    if ($cache_per_role) {
       $cid_parts[] = 'r.' . implode(',', array_keys($user->roles));
     }
-    elseif ($granularity & DRUPAL_CACHE_PER_USER) {
+    elseif ($cache_per_user) {
       $cid_parts[] = "u.$user->uid";
     }
 
@@ -7437,39 +7445,7 @@ function drupal_parse_info_format($data) {
   $info = array();
   $constants = get_defined_constants();
 
-  $matches = array();
-  $lines = explode('
-', $data);
-  $lines_length = count($lines);
-
-  for ($c = 0; $c < $lines_length; $c++) {
-
-    // check if line contains part of a multiline string
-    $multi = substr_count($lines[$c], '"');
-
-    // if so, we need to include the remaining lines into this one
-    if ($multi == 1) {
-
-      $multi_line = $lines[$c];
-
-      // add lines
-      while ($c + 1 < $lines_length && substr_count($lines[$c + 1], '"') == 0) {
-        $multi_line .= '
-' . $lines[$c + 1];
-        $c++;
-      }
-
-      // add last line
-      if ($c + 1 < $lines_length) {
-        $multi_line .= '
-' . $lines[$c + 1];
-        $c++;
-        // override last line with full multi-line content
-        $lines[$c] = $multi_line;
-      }
-    }
-
-    if (preg_match('
+  if (preg_match_all('
     @^\s*                           # Start at the beginning of a line, ignoring leading whitespace
     ((?:
       [^=;\[\]]|                    # Key names cannot contain equal signs, semi-colons or square brackets,
@@ -7481,12 +7457,7 @@ function drupal_parse_info_format($data) {
       (\'(?:[^\']|(?<=\\\\)\')*\')| # Single-quoted string, which may contain slash-escaped quotes/slashes
       ([^\r\n]*?)                   # Non-quoted string
     )\s*$                           # Stop at the next end of a line, ignoring trailing whitespace
-    @msx', $lines[$c], $line_matches)) {
-      $matches[] = $line_matches;
-    }
-  }
-
-  if (count($matches) > 0) {
+    @msx', $data, $matches, PREG_SET_ORDER)) {
     foreach ($matches as $match) {
       // Fetch the key and value string.
       $i = 0;
