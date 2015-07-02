@@ -36,7 +36,7 @@
 }
 .navbar-collapse {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 .navbar {
   position: fixed;
@@ -47,14 +47,14 @@
   width: 100%;
 }
 #main-wrapper {
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 250px;
 }
 .header-bg {
   height: 220px;
   width: 100%;
   position: absolute;
-  left:0px;
+  left:0;
   background: url(../images/header-bg.png);
 }
 .navbar {
