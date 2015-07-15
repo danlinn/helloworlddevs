@@ -44,7 +44,7 @@
 /* line 37, ../scss/main.scss */
 .navbar-collapse {
   position: absolute;
-  right: 0px; }
+  right: 0; }
 
 /* line 41, ../scss/main.scss */
 .navbar {
@@ -58,7 +58,7 @@
 
 /* line 49, ../scss/main.scss */
 #main-wrapper {
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 250px; }
 
 /* line 53, ../scss/main.scss */
@@ -66,12 +66,8 @@
   height: 220px;
   width: 100%;
   position: absolute;
-  left: 0px;
+  left: 0;
   background: url(../images/header-bg.png); }
-
-/* line 60, ../scss/main.scss */
-.navbar {
-  overflow: hidden; }
 
 /* line 63, ../scss/main.scss */
 h2 {
