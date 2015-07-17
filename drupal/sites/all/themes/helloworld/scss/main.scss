@@ -55,6 +55,7 @@
   width: 100%;
   position: absolute;
   left:0;
+  opacity: 0.5;
   background: url(../images/header-bg.png);
 }
 .navbar {
@@ -65,4 +66,9 @@ h2 {
 }
 h3 {
   color: $midpurple;
+}
+@media(max-width: 767px) {
+  .header-bg {
+    display: none;
+  }
 }
