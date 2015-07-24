@@ -67,7 +67,7 @@
   width: 100%;
   position: absolute;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   background: url(../images/header-bg.png); }
 
 /* line 64, ../scss/main.scss */
@@ -81,6 +81,29 @@ h3 {
 @media (max-width: 767px) {
   /* line 71, ../scss/main.scss */
   .header-bg {
-    display: none; } }
+    display: none; }
+
+  /* line 75, ../scss/main.scss */
+  #main-wrapper {
+    margin-top: 0;
+    padding-top: 100px; }
+
+  /* line 79, ../scss/main.scss */
+  .navbar {
+    border: none; }
+
+  /* line 82, ../scss/main.scss */
+  .container > .navbar-collapse {
+    margin: 0px; }
+
+  /* line 85, ../scss/main.scss */
+  .navbar-collapse {
+    width: 100%;
+    padding: 0px; }
+    /* line 88, ../scss/main.scss */
+    .navbar-collapse ul.links {
+      background-color: black;
+      margin: 0px;
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

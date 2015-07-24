@@ -55,7 +55,7 @@
   width: 100%;
   position: absolute;
   left:0;
-  opacity: 0.5;
+  opacity: 0.3;
   background: url(../images/header-bg.png);
 }
 .navbar {
@@ -70,5 +70,25 @@ h3 {
 @media(max-width: 767px) {
   .header-bg {
     display: none;
+  }
+
+  #main-wrapper {
+    margin-top: 0;
+    padding-top: 100px;
+  }
+  .navbar {
+    border: none;
+  }
+  .container > .navbar-collapse {
+    margin: 0px;
+  }
+  .navbar-collapse {
+    width: 100%;
+    padding: 0px;
+    ul.links {
+      background-color: black;
+      margin: 0px;
+      width: 100%;
+    }
   }
 }

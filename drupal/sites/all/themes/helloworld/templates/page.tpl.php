@@ -87,7 +87,7 @@
     <!-- Page Header -->
     <header
             class="navbar navbar-default navbar-inverse <?php if ($hide_site_name && $hide_site_slogan && !$logo && !$main_menu && !$secondary_menu) { print ' element-invisible'; } ?>">
-      <div class="header-bg" data-0="opacity:.5;height:220px" data-100="opacity:0;height:70px"></div>
+      <div class="header-bg" data-0="opacity:.3;height:220px" data-100="opacity:0;height:70px"></div>
 
       <div class="container">
 

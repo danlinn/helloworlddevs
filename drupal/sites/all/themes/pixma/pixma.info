@@ -1,0 +1,54 @@
+name = Pixma
+description = A Pixma theme
+core = 7.x
+
+regions[content] = Content
+regions[top_left] = Top Left
+regions[top_right] = Top Right
+regions[logo] = Logo
+regions[nav] = Nav
+regions[marquee] = Marquee
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/bootstrap-theme.css
+stylesheets[all][] = css/fonts/font-awesome/css/font-awesome.css
+stylesheets[all][] = css/animations.css
+stylesheets[all][] = css/superfish.css
+stylesheets[all][] = css/revolution-slider/css/settings.css
+stylesheets[all][] = css/prettyPhoto.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/colors/magenta.css
+stylesheets[all][] = css/theme-responsive.css
+stylesheets[all][] = css/switcher.css
+stylesheets[all][] = css/spectrum.css
+stylesheets[all][] = css/switcher.css
+
+; DO NOT REMOVE OR EDIT BETWEEN THESE LINES
+; bower:css
+; endbower
+
+; DO NOT REMOVE OR EDIT BETWEEN THESE LINES
+; bower:js
+; endbower
+
+scripts[] = js/pixma.js
+scripts[] = js/jquery.min.js
+scripts[] = js/bootstrap.js
+scripts[] = js/jquery.parallax.js
+scripts[] = js/jquery.wait.js
+scripts[] = js/modernizr-2.6.2.min.js
+scripts[] = js/revolution-slider/js/jquery.themepunch.revolution.min.js
+scripts[] = js/jquery.nivo.slider.pack.js
+scripts[] = js/jquery.prettyPhoto.js
+scripts[] = js/superfish.js
+scripts[] = js/tweetMachine.js
+scripts[] = js/tytabs.js
+scripts[] = js/jquery.gmap.min.js
+scripts[] = js/circularnav.js
+scripts[] = js/jquery.sticky.js
+scripts[] = js/jflickrfeed.js
+scripts[] = js/imagesloaded.pkgd.min.js
+scripts[] = js/waypoints.min.js
+scripts[] = js/spectrum.js
+scripts[] = js/switcher.js
+scripts[] = js/custom.js
