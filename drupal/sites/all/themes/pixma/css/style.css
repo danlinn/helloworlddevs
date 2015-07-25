@@ -177,7 +177,8 @@ a:hover,a:focus {
     z-index: 9999;
     width: 100%;
     position: relative;
-	background:#323B44;
+	/* old background:#323B44; */
+	background:#444;
     -webkit-box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
     box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
 }
@@ -185,7 +186,7 @@ a:hover,a:focus {
 header .top-bar {
     min-height: 30px;
     background: #25292C;
-	border-bottom: 1px solid #414f5a;
+	border-bottom: 1px solid #5a5a5a;
     padding: 7px 0;
 }
 
@@ -1455,7 +1456,8 @@ a.prev,a.next {
     height: 25px;
     display: block;
     cursor: pointer;
-    background: #323B44;
+    /* old background: #323B44; */
+background: #444;
     color: #fafafa;
     font-size: 20px;
     text-align: center;
@@ -1469,7 +1471,8 @@ a.next {
 a.prev.disabled,a.next.disabled {
     display: block;
     cursor: default;
-    background: #323B44;
+    /* old background: #323B44; */
+background: #444;
     color: #fafafa;
     font-size: 20px;
     text-align: center;
@@ -1578,8 +1581,9 @@ span.color {
 }
 
 .footer-top {
-    background: #323B44;
-	border-bottom: 1px solid #414f5a;
+    /* old background: #323B44; */
+background: #444;
+	border-bottom: 1px solid #5a5a5a;
     color: #A1A1A1;
     padding: 50px 0;
 }
@@ -2608,7 +2612,15 @@ header .social li.rss:hover,footer .social li.rss:hover {
     color: #fff;
     margin: 0 auto!important;
 }
+.menu  ul li {
+  float: none;
+}
 
+  @media (min-width: 980px) {
+    .menu ul li {
+      float: left;
+    }
+  }
 .pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus {
     border-color: transparent;
 }

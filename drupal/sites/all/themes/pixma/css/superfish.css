@@ -78,7 +78,7 @@
 
 #current,.menu ul li a:hover,.menu ul>li:hover>a,
 .menu a.active {
-		background-color:#252c34;
+		background-color:#343434;
 }
 #current:after,
 .menu a.active:after {
@@ -127,7 +127,7 @@
 	transition:border 150ms ease-in-out,background-color 150ms ease-in-out;
 }
 .menu ul ul {
-	background-color:#252c34;
+	background-color:#343434;
 	z-index:999;
 	border-radius:0 0 3px 3px;
 	margin:-3px 0 0 0;
@@ -155,14 +155,14 @@
     transition: all .4s ease-in-out;
 }
 .menu ul ul li {
-	border-top:1px solid #414F5A;
+	border-top:1px solid #5a5a5a;
 }
 .menu ul ul li:first-child {
 	border:0;
 }
 .menu ul ul li a:hover {
 	color:#fff;
-	background-color:#2f3843;
+	background-color:#434343;
 	border:0;
 	padding-left:21px !important;
 }

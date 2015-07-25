@@ -46,7 +46,7 @@ website:   	http://www.themepunch.com
 .tp-caption.align_center p{text-align:center;}
 
 .caption .dblue {
-	color: #4E5B6C;
+	color: #6c6c6c;
   text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.9);
 }
 
@@ -327,7 +327,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			background-color:#4e5b6c;
+			background-color:#6c6c6c;
 			letter-spacing: 0;
 		}
 .tp-caption.modern_big_redbg{

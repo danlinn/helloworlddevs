@@ -152,6 +152,17 @@
   <!-- Header End -->
   <!-- Content Start -->
   <div id="main">
+    <?php if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])): ?>
+      <div id="tabs">
+        <?php print render($tabs); ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($action_links): ?>
+      <div id="action-links">
+        <?php print render($action_links); ?>
+      </div>
+    <?php endif; ?>
     <!-- Slider Start-->
     <?php if ($page['marquee']): ?>
       <?php print render($page['marquee']); ?>
@@ -885,9 +896,9 @@
           </div>
           <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
             <ul class="social social-icons-footer-bottom">
-              <li class="facebook"><a href="https://www.facebook.com/helloworlddevs" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <li class="facebook"><a href="https://www.facebook.com/helloworlddevs" title="Facebook"><i class="fa fa-facebook"></i></a>
               </li>
-              <li class="twitter"><a href="https://twitter.com/helloworlddevs" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <li class="twitter"><a href="https://twitter.com/helloworlddevs" title="Twitter"><i class="fa fa-twitter"></i></a>
               </li>
              <!-- <li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a>
               </li>

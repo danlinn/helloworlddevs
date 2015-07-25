@@ -1,0 +1,83 @@
+/*Magenta #f91470 */
+
+.menu a.active:after, .btn:focus, .subscribe-btn, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .tp-leftarrow.default:hover,.tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover, .contact-box:hover, #options li a.selected, .ch-info .ch-info-back {
+    background: #f91470;
+}
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pager li > a:hover, .pager li > a:focus, .navbar-toggle i, .cn-wrapper li a, .cn-wrapper:after {
+    background-color: #f91470;
+    color: #fff;
+}
+
+.spinner {
+    border-top-color: #f91470;
+}
+
+.hero {
+    border-left-color: #f91470;
+}
+
+#options li a.selected {
+	border: 1px solid #f91470;
+}
+
+.ie8 .btn-color, .ie9 .btn-color {
+	background: #f91470 !important;
+}
+
+.ie8 .btn-color:hover, .ie9 .btn-color:hover {
+	background: #fb5b9f !important;
+}
+
+.btn-color:hover, .subscribe-btn:hover {
+	background: -webkit-linear-gradient(#fb5b9f,#f91470);
+	background: -moz-linear-gradient(#fb5b9f,#f91470);
+	background: -o-linear-gradient(#fb5b9f,#f91470);
+	background: -ms-linear-gradient(#fb5b9f,#f91470);
+	background: linear-gradient(#fb5b9f,#f91470);
+}
+
+.btn-color, .subscribe-btn {
+	background: -webkit-linear-gradient(#f91470,#fb5b9f);
+	background: -moz-linear-gradient(#f91470,#fb5b9f);
+	background: -o-linear-gradient(#f91470,#fb5b9f);
+	background: -ms-linear-gradient(#f91470,#fb5b9f);
+	background: linear-gradient(#f91470,#fb5b9f);
+	border: 1px solid #a05280;
+
+	-webkit-box-shadow: inset 0 1px 1px 0 #e4a6cb, 0 2px 0 -1px rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 1px 0 #e4a6cb, 0 2px 0 -1px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+
+#current,.menu ul li a:hover,.menu ul>li:hover>a,
+.menu a.active {
+    border-bottom: 3px solid #f91470;
+}
+
+ul.why li:before {
+    background: #f91470;
+}
+
+.menu ul ul {
+    border-top: 3px solid #f91470 !important;
+}
+
+#horizontal-tabs ul.tabs li.current {
+    border-top: 2px solid #f91470;
+}
+
+#vertical-tabs ul.tabs li.current {
+    border-left: 2px solid #f91470;
+}
+
+
+.author-content, div.content-box.big, #cn-tabs .service, .comment-des, .contact-box {
+	border-bottom-color:#f91470;
+}
+
+a, .post-item h4 a:hover, .cn-wrapper li a:hover, .cn-wrapper li a.active, .color {
+    color: #f91470;
+}
