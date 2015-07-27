@@ -2691,3 +2691,47 @@ footer a,.contact-box:hover,#options li a.selected,header .top-bar,header .top-b
 .region-logo img {
   padding-top: 11px;
 }
+
+.bg-green {
+  background: #70c153 !important;
+}
+
+.bg-purple {
+  background: #6e61a9 !important;
+}
+
+.bg-pink {
+  background: #ed347c !important;
+}
+
+.color-green {
+  color: #70c153 !important;
+}
+
+.color-purple {
+  color: #6e61a9 !important;
+}
+
+.color-pink {
+  color: #ed347c !important;
+}
+
+.border-bottom-green {
+  border-bottom-color: #70c153 !important;
+}
+
+.border-bottom-purple {
+  border-bottom-color: #6e61a9 !important;
+}
+
+.border-bottom-pink {
+  border-bottom-color: #ed347c !important;
+}
+
+i.fa-users {
+  left: 32%;
+}
+
+h2.pane-title {
+  margin-top: 25px;
+}

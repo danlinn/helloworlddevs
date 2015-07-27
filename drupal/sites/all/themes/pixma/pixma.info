@@ -31,8 +31,8 @@ stylesheets[all][] = css/switcher.css
 ; bower:js
 ; endbower
 
-scripts[] = js/pixma.js
-scripts[] = js/jquery.min.js
+;scripts[] = js/pixma.js
+;scripts[] = js/jquery.min.js
 scripts[] = js/bootstrap.js
 scripts[] = js/jquery.parallax.js
 scripts[] = js/jquery.wait.js

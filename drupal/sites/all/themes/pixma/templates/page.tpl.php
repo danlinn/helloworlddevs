@@ -184,11 +184,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="content-box big ch-item bottom-pad-small">
+            <div class="content-box big ch-item bottom-pad-small border-bottom-green">
               <div class="ch-info-wrap">
                 <div class="ch-info">
                   <div class="ch-info-front ch-img-1"><i class="fa fa-tasks"></i></div>
-                  <div class="ch-info-back">
+                  <div class="ch-info-back bg-green">
                     <i class="fa fa-bullseye"></i>
                   </div>
                 </div>
@@ -200,7 +200,7 @@
                   Helloworld is committed to providing a candidate that is more than just a good fit with skills. It's important that they also match your
                   companies values and culture. With research, we can do better.
                 </p>
-                <a href="/placement">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+                <a href="/placement" class="color-green">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -226,11 +226,11 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="content-box big ch-item">
+            <div class="content-box big ch-item border-bottom-purple">
               <div class="ch-info-wrap">
                 <div class="ch-info">
                   <div class="ch-info-front ch-img-1"><i class="fa fa-users"></i></div>
-                  <div class="ch-info-back">
+                  <div class="ch-info-back bg-purple">
                     <i class="fa fa-thumbs-up"></i>
                   </div>
                 </div>
@@ -243,7 +243,7 @@
                   stay interested in their work and your company. All juniors place by helloworld are
                   automatically eligible for mentorship.
                 </p>
-                <a href="/junior-mentorship">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+                <a href="/junior-mentorship" class="color-purple">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
